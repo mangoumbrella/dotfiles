@@ -1,0 +1,25 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+${custom.iterm_prompt_marker_start}$all${custom.iterm_prompt_marker_end}"""
+add_newline = false
+
+[status]
+disabled = false
+
+[python]
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+pyenv_version_name = true
+detect_env_vars = ["PATH"]
+
+[custom.iterm_prompt_marker_start]
+format = "\u001b\\]133;A\u0007"
+when = true
+
+[custom.iterm_prompt_marker_end]
+format = "\u001b\\]133;B\u0007"
+when = true
+
+[gcloud]
+disabled = true

@@ -1,0 +1,26 @@
+export MANGO_DOTFILES_DIR="${HOME}/github/dotfiles"
+export MANGO_TOOLS_DIR="${HOME}/tools"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export PATH="${MANGO_TOOLS_DIR}/brew/bin:${PATH}"
+export PATH="${MANGO_TOOLS_DIR}/google-cloud-sdk/bin:${PATH}"
+export PATH="${MANGO_TOOLS_DIR}/Go/bin:${PATH}"
+
+# Things that are still in private depot.
+export PATH="${HOME}/depot/tools/scripts:${PATH}"
+export GOPATH="${HOME}/tools/Go:${HOME}/depot/website"
+
+# Python
+export PATH="${MANGO_TOOLS_DIR}/pyenv/bin:${PATH}"
+export PYENV_ROOT="${MANGO_TOOLS_DIR}/pyenv"
+eval "$(pyenv init - zsh)"
+
+# Ruby
+# Install using `gem install --user-install <name>`
+export GEM_HOME="${MANGO_TOOLS_DIR}/gem"
+export PATH="$GEM_HOME/bin:${PATH}"
+
+# Prompt
+export STARSHIP_CONFIG="$MANGO_DOTFILES_DIR/shell/startship.toml"
+eval "$(starship init zsh)"
