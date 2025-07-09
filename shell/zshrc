@@ -7,6 +7,8 @@ export PATH="${MANGO_TOOLS_DIR}/brew/bin:${PATH}"
 export PATH="${MANGO_TOOLS_DIR}/google-cloud-sdk/bin:${PATH}"
 export PATH="${MANGO_TOOLS_DIR}/Go/bin:${PATH}"
 
+export PAGER="less -F -X"
+
 # Things that are still in private depot.
 export PATH="${HOME}/depot/tools/scripts:${PATH}"
 export GOPATH="${HOME}/tools/Go:${HOME}/depot/website"
