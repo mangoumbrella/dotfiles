@@ -20,6 +20,7 @@ eval "$(pyenv init - zsh)"
 
 # Ruby
 # Install using `gem install --user-install <name>`
+eval "$(rbenv init -)"
 export GEM_HOME="${MANGO_TOOLS_DIR}/gem"
 export PATH="$GEM_HOME/bin:${PATH}"
 
