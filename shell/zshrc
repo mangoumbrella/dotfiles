@@ -35,3 +35,9 @@ eval "$(starship init zsh)"
 # zsh plugins
 # To install: git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 source "${HOME}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
+
+# Claude settings
+if [[ ! -e "${HOME}/.claude/settings.json" ]]; then
+  mkdir -p "${HOME}/.claude"
+  ln -s "${MANGO_DOTFILES_DIR}/claude/settings.json" "${HOME}/.claude/settings.json"
+fi
