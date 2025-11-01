@@ -3,6 +3,7 @@ export MANGO_TOOLS_DIR="${HOME}/tools"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+export PATH="${HOME}/.local/bin:${PATH}"
 export PATH="${MANGO_TOOLS_DIR}/brew/bin:${PATH}"
 export PATH="${MANGO_TOOLS_DIR}/google-cloud-sdk/bin:${PATH}"
 export PATH="${MANGO_TOOLS_DIR}/Go/bin:${PATH}"
