@@ -15,9 +15,9 @@ export PATH="${HOME}/depot/tools/scripts:${PATH}"
 export GOPATH="${HOME}/tools/Go:${HOME}/depot/website"
 
 # Python
+export PATH="${MANGO_TOOLS_DIR}/pyenv/bin:${PATH}"
+export PYENV_ROOT="${MANGO_TOOLS_DIR}/pyenv"
 if command -v pyenv >/dev/null 2>&1; then
-  export PATH="${MANGO_TOOLS_DIR}/pyenv/bin:${PATH}"
-  export PYENV_ROOT="${MANGO_TOOLS_DIR}/pyenv"
   eval "$(pyenv init - zsh)"
 fi
 
