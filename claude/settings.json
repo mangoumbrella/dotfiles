@@ -3,8 +3,10 @@
     "allow": [
       "Bash(chmod:*)",
       "Bash(find:*)",
+      "Bash(python:*)",
+      "Bash(python3:*)",
       "Bash(tree:*)",
-      "Bash(uv run python:*)",
+      "Bash(uv:*)",
       "Read(~/**)",
       "WebFetch(domain:github.com)",
       "WebFetch(domain:raw.githubusercontent.com)",
