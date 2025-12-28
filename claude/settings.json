@@ -1,6 +1,15 @@
 {
-  "alwaysThinkingEnabled": false,
   "permissions": {
+    "allow": [
+      "Bash(chmod:*)",
+      "Bash(find:*)",
+      "Bash(tree:*)",
+      "Bash(uv run python:*)",
+      "Read(~/**)",
+      "WebFetch(domain:github.com)",
+      "WebSearch"
+    ],
     "defaultMode": "acceptEdits"
-  }
+  },
+  "alwaysThinkingEnabled": true
 }
