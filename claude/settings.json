@@ -1,12 +1,15 @@
 {
   "permissions": {
     "allow": [
+      "Bash(cat:*)",
       "Bash(chmod:*)",
       "Bash(find:*)",
+      "Bash(printf:*)",
       "Bash(python:*)",
       "Bash(python3:*)",
       "Bash(tree:*)",
       "Bash(uv:*)",
+      "Bash(wc:*)",
       "Read(~/**)",
       "WebFetch(domain:github.com)",
       "WebFetch(domain:raw.githubusercontent.com)",
