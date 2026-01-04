@@ -15,8 +15,7 @@
       "Bash(wc:*)",
       "Read(~/**)",
       "Skill(frontend-design)",
-      "WebFetch(domain:github.com)",
-      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:*)",
       "WebSearch"
     ],
     "defaultMode": "acceptEdits"
