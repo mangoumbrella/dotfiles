@@ -19,7 +19,9 @@
       "Read(~/**)",
       "Skill(frontend-design)",
       "WebFetch(domain:*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(xargs basename:*)",
+      "Bash(xargs ls:*)"
     ],
     "defaultMode": "acceptEdits"
   },
