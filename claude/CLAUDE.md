@@ -4,7 +4,8 @@
 
 ## Writing style
 
-- Never use em dashes (—) or double dashes (--).
+- Never use em dashes (—) or double dashes (--) in prose (messages, comments,
+  commit messages, docs).
 - Code comments should never contain process narration.
 
 ## iOS simulators
@@ -22,5 +23,5 @@ prefix is the ownership boundary, not who booted the device.
   test checklist. Drive it with `axe` (tap, swipe, type, screenshot), and use
   `axe describe-ui --udid <UDID>` to read element frames and values, which is
   more reliable than judging from screenshots.
-- After a focus change, wait about 2s before `axe type` or the keystrokes can
-  be dropped.
+- When tapping a field before `axe type`, pass `--post-delay 2` to the tap or
+  the keystrokes can be dropped.
